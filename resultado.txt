@@ -1,0 +1,6 @@
+API de pokemon
+Lista de pokemon 20 + proxima pagina
+pode favoritar
+página de favoritos
+página de pokemon individual
+salvar os favoritos no próprio computador
