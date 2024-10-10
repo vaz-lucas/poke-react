@@ -12,7 +12,7 @@ const Favorites = ({ favorites, setFavorites }) => {
 
 
         <div>
-            <p>{JSON.stringify(favorites)}</p>
+            {/*             <p>{JSON.stringify(favorites)}</p> */}
 
             {favorites.map(item => {
 

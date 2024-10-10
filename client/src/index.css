@@ -1,4 +1,4 @@
-:root {
+/*:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -27,8 +27,18 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /*   min-width: 320px;
+  min-height: 100vh; 
+  background-color: rgb(86, 190, 109);
+}
+
+home-front {
+  display: flex;
+  background-color: rgb(120, 164, 214);
+}
+
+pokemon-preview {
+  background-color: #535bf2;
 }
 
 h1 {
@@ -64,7 +74,7 @@ button:focus-visible {
   }
 
   a:hover {
-    color: #747bff;
+    color: #a7a9d4;
   }
 
   button {
@@ -76,4 +86,4 @@ button:focus-visible {
   border: 5px #c91111;
   background-color: salmon;
   color: white;
-}
+}\*

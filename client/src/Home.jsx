@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react'
 import './App.css'
+import './index.css'
 import useFetch from './hooks/useFetch';
 import PokemonItem from './components/PokemonItem';
 import useGraphQL from './hooks/useGraphQL';
@@ -25,8 +26,8 @@ const Home = ({ setFavorites, favorites }) => {
 
 
     return (
-        <div className="home">
-            <p>{JSON.stringify(data)}</p>
+        <div className="home-front">
+            {/*             <p>{JSON.stringify(data)}</p> */}
 
             {data?.data?.pokemon_v2_pokemon?.map((pokemon) => {
                 return (
