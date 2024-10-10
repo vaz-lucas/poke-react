@@ -3,11 +3,22 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import useFetch from './hooks/useFetch';
 import PokemonItem from './components/PokemonItem';
+import useGraphQL from './hooks/useGraphQL';
 
 const Home = ({ setFavorites, favorites }) => {
     const [offSet, setoffSet] = useState(0);
 
-    const { data } = useFetch(`https://pokeapi.co/api/v2/pokemon?offset=${offSet}&limit=20`);
+    const { data } = useGraphQL(`
+        query samplePokeAPIquery {
+  pokemon_v2_pokemon(offset: ${offSet}, limit: 10) {
+    id
+    name
+    pokemon_v2_pokemonsprites {
+      id
+      sprites
+    }
+  }
+}`)
 
 
 
@@ -15,9 +26,9 @@ const Home = ({ setFavorites, favorites }) => {
 
     return (
         <div className="home">
-            <p>{JSON.stringify(favorites.map(item => item.name))}</p>
+            <p>{JSON.stringify(data)}</p>
 
-            {data?.results?.map((pokemon) => {
+            {data?.data?.pokemon_v2_pokemon?.map((pokemon) => {
                 return (
                     <PokemonItem key={`pokemon-item-${pokemon.name}`} pokeObj={pokemon}
                         isFavorite={favorites.some(item => {

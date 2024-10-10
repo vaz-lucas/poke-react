@@ -5,8 +5,8 @@ import { useState, useEffect } from 'react'
 
 
 export default function PokemonItem({ pokeObj, isFavorite, setFavorites }) { //vai receber um pokeObj e um isFavorite do pai dele (aquele que chama)
-    const { name, url } = pokeObj /// Eu pego o name e url que estão contidas no objeto pokemon
-    const { data } = useFetch(url)
+    const { name, pokemon_v2_pokemonsprites, id } = pokeObj /// Eu pego o name e url que estão contidas no objeto pokemon
+    /*     const { data } = useFetch(url) */
 
 
 
@@ -30,9 +30,9 @@ export default function PokemonItem({ pokeObj, isFavorite, setFavorites }) { //v
 
     return (
         <div className="pokemon-preview"   >
-            <div className={isFavorite ? 'favoritePokemons' : ""} id={data.id}>
+            <div className={isFavorite ? 'favoritePokemons' : ""} id={id}>
                 <h2>{name}</h2>
-                <img src={data?.sprites?.front_default} alt="" />
+                <img src={pokemon_v2_pokemonsprites?.[0]?.sprites?.front_default} alt="" />
                 <button onClick={handleFavorite}>Favorite</button>
 
             </div>
