@@ -92,7 +92,8 @@ body {
   flex-wrap: wrap;
   background-color: rgb(120, 164, 214);
   margin: 0 auto;
-  flex: 200px;
+  gap: 1rem;
+  /*   flex: 200px; */
   /*   text-align: center; */
   justify-content: center;
   /*   flex-direction: column; */
@@ -101,16 +102,69 @@ body {
 .pokemon-preview {
   background-color: #535bf2;
   max-width: 50%;
-  min-width: 19%;
+  min-width: 30%;
   margin: 2px;
-  text-align: center;
-  justify-content: center;
+  /*   text-align: center;
+  justify-content: center; */
+  /*   display: flex; */
 
 
   /*   h2 {
     text-align: center;
   } */
 }
+
+.display-pokemon {
+  display: flex;
+  /*   max-width: 47%; */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.offsetButtons {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+img.star {
+
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+}
+
+img.star:hover {
+  width: 4rem;
+  height: 4rem;
+}
+
+.star2 {
+  padding: 2px;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.star2 svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+.star2:hover svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.star2.favoritePokemons {
+  /*   background-color: #c91111; */
+  color: #c91111;
+}
+
 
 h1 {
   font-size: 3.2em;
@@ -119,7 +173,7 @@ h1 {
 }
 
 
-button {
+.offsetButtons Button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -132,12 +186,12 @@ button {
   transition: border-color 0.25s;
 }
 
-button:hover {
+.offsetButtons button:hover {
   border-color: #646cff;
 }
 
-button:focus,
-button:focus-visible {
+.offsetButtons button:focus,
+.offsetButtons button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
@@ -154,10 +208,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-.favoritePokemons {
-  /*   border: 5px #c91111; */
-  background-color: salmon;
-  color: white;
 }

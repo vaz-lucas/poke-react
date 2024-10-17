@@ -26,23 +26,28 @@ const Home = ({ setFavorites, favorites }) => {
 
 
     return (
-        <div className="home-front">
-            {/*             <p>{JSON.stringify(data)}</p> */}
+        <div>
+            <div className="home-front">
+                {/*             <p>{JSON.stringify(data)}</p> */}
 
-            {data?.data?.pokemon_v2_pokemon?.map((pokemon) => {
-                return (
-                    <PokemonItem key={`pokemon-item-${pokemon.name}`} pokeObj={pokemon}
-                        isFavorite={favorites.some(item => {
-                            return item.name === pokemon.name // pegando todos os pokemons e verificando se algum deles está nos favoritos
-                        })}
-                        setFavorites={setFavorites} // passei para o filho a capacidade de alterar o estado
-                    ></PokemonItem>  // a key é necessária para que o objeto iterado mantenha sempre a mesma ordem
+                {data?.data?.pokemon_v2_pokemon?.map((pokemon) => {
+                    return (
+                        <PokemonItem key={`pokemon-item-${pokemon.name}`} pokeObj={pokemon}
+                            isFavorite={favorites.some(item => {
+                                return item.name === pokemon.name // pegando todos os pokemons e verificando se algum deles está nos favoritos
+                            })}
+                            setFavorites={setFavorites} // passei para o filho a capacidade de alterar o estado
+                        ></PokemonItem>  // a key é necessária para que o objeto iterado mantenha sempre a mesma ordem
 
-                )
-            })}
-            <button disabled={offSet === 0} onClick={() => setoffSet(offSet - 20)}>Previous</button>
-            <button onClick={() => setoffSet(offSet + 20)} >Next  </button>
+                    )
+                })}
 
+
+            </div>
+            <div className="offsetButtons">
+                <button disabled={offSet === 0} onClick={() => setoffSet(offSet - 20)}>Previous</button>
+                <button onClick={() => setoffSet(offSet + 20)} >Next  </button>
+            </div>
         </div>
     );
 
