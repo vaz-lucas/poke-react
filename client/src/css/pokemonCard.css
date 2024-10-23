@@ -1,0 +1,64 @@
+.pokemon-preview {
+    background-color: #535bf2;
+    width: 250px;
+    height: 340px;
+    border: 8px solid yellow;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.display-pokemon {
+    display: flex;
+    /*   max-width: 47%; */
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    border: 5px solid rgb(224, 209, 224);
+    padding: 20px 50px 0px 50px;
+    box-sizing: border-box;
+    background-color: rgb(66, 133, 192);
+}
+
+h2 {
+    /*     width: 30px;
+    height: 30px; */
+    margin: 2px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+
+.star {
+    padding: 2px;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    align-items: center;
+    text-align: right;
+    justify-content: right;
+
+}
+
+.star svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+.star:hover svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.star.favoritePokemons {
+    /*   background-color: #c91111; */
+    color: yellow;
+}

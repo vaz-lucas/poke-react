@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react'
 /* import './App.css' */
 import './css/home.css'
-import useFetch from './hooks/useFetch';
 import PokemonItem from './components/PokemonItem';
 import useGraphQL from './hooks/useGraphQL';
 
