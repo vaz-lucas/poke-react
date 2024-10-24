@@ -1,8 +1,8 @@
 .pokemon-preview {
-    background-color: #535bf2;
+    background-color: #3D7DCA;
     width: 250px;
     height: 340px;
-    border: 8px solid yellow;
+    border: 8px solid #FFCB05;
     box-sizing: border-box;
     border-radius: 5px;
 }
@@ -60,5 +60,5 @@ h2 {
 
 .star.favoritePokemons {
     /*   background-color: #c91111; */
-    color: yellow;
+    color: #FFCB05;
 }

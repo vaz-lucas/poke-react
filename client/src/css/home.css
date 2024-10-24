@@ -10,8 +10,10 @@ body {
 .home-front {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(120, 164, 214);
-    margin: 0 auto;
+    /*     background-color: #3D7DCA; */
+    border: 2px solid #FFCB05;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
     gap: 1rem;
     padding: 15px 25px;
     /*   flex: 200px; */
