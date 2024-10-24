@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PokemonItem from "./PokemonItem";
+import '../css/home.css';
 
 
 
@@ -11,7 +12,7 @@ const Favorites = ({ favorites, setFavorites }) => {
     return (
 
 
-        <div>
+        <div className="home-front">
             {/*             <p>{JSON.stringify(favorites)}</p> */}
 
             {favorites.map(item => {
