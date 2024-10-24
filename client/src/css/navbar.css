@@ -8,19 +8,25 @@ h1 {
     font-size: 3.2em;
     line-height: 1.1;
     color: #FFCB05;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 a {
     font-weight: 700;
-    color: #3D7DCA;
+    color: #FFCB05;
     text-decoration: inherit;
-    border: 2px solid black;
+    border: 1px solid transparent;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
+    background-color: #003A70;
+    width: 5rem;
+
 }
 
 a:hover {
-    color: #3D7DCA;
+    color: #F93318;
+    border-color: #FFCB05;
 }
 
 .links {
