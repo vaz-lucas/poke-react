@@ -5,7 +5,10 @@
     border: 8px solid #FFCB05;
     box-sizing: border-box;
     border-radius: 5px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.267);
+
 }
+
 
 
 .display-pokemon {
