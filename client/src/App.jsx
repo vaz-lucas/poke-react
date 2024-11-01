@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
 /* import './index.css' */
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import useFetch from './hooks/useFetch';

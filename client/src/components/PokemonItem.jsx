@@ -33,7 +33,7 @@ export default function PokemonItem({ pokeObj, isFavorite, setFavorites }) { //v
 
         /*   <div className="pokemon-preview"   > */
 
-        <div className={isFavorite ? 'favoritePokemons favStar pokemon-preview' : "pokemon-preview"} id={id}>
+        <div className={`pokemon-preview ${isFavorite ? 'favoritePokemons favStar' : ""}`} id={id}>
             <div className="display-pokemon">
                 <h2>{name}</h2>
                 {/*                 <img className='star' src="../images/star-empty.png" alt="" /> */}
